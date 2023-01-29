@@ -9,9 +9,8 @@ const UserMenu = () => {
   };
 
   return (
-    <div>
-      <p>userEmail</p>
-      <button type="button" onClick={handleClick}>
+    <div className="userMenu">
+      <button type="button" onClick={handleClick} className="submitBtn">
         Log out
       </button>
     </div>

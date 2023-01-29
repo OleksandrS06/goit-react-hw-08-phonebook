@@ -5,7 +5,7 @@ const HomePage = () => {
     <section className={css.section}>
       <div>
         <h1 className={css.heading}>Welcome, stranger</h1>
-        <p className={css.text}>Login first to enjoy an app</p>
+        <p className={css.text}>Register first or login to enjoy an app</p>
       </div>
     </section>
   );

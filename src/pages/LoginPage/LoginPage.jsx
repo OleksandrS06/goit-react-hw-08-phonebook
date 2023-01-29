@@ -1,4 +1,5 @@
 import LoginForm from 'components/LoginForm/LoginForm';
+import LoginRedirect from 'hoc/LoginRedirect';
 
 const LoginPage = () => {
   return (
@@ -11,4 +12,6 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+const ProtectedLoginPage = LoginRedirect(LoginPage, '/contacts');
+
+export default ProtectedLoginPage;

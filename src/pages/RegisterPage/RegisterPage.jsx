@@ -1,4 +1,5 @@
 import RegisterForm from 'components/RegisterForm/RegisterForm';
+import RegistrationRedirect from 'hoc/RegistRedirect';
 
 const RegisterPage = () => {
   return (
@@ -11,4 +12,6 @@ const RegisterPage = () => {
   );
 };
 
-export default RegisterPage;
+const ProtectedRegisterPage = RegistrationRedirect(RegisterPage, '/login');
+
+export default ProtectedRegisterPage;

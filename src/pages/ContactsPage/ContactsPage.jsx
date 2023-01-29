@@ -25,7 +25,7 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <section className="wrapper">
+    <section className="section">
       <h1 className="heading">Phonebook</h1>
       <Form />
       {contacts.length > 0 ? (

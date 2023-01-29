@@ -8,6 +8,8 @@ import { useDispatch } from 'react-redux';
 import { refreshUser } from 'redux/auth/operations';
 import PageNotFound from 'pages/404/404';
 import ProtectedContactsPage from 'pages/ContactsPage/ContactsPage';
+import ProtectedRegisterPage from 'pages/RegisterPage/RegisterPage';
+import ProtectedLoginPage from 'pages/LoginPage/LoginPage';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -20,8 +22,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="register" element={<RegisterPage />} />
-        <Route path="login" element={<LoginPage />} />
+        <Route path="register" element={<ProtectedRegisterPage />} />
+        <Route path="login" element={<ProtectedLoginPage />} />
         <Route path="contacts" element={<ProtectedContactsPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
