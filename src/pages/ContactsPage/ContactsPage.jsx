@@ -12,6 +12,7 @@ import Form from 'components/ContactAddForm/ContactAddForm';
 import ContactsList from 'components/ContactsList';
 import Filter from 'components/Filter';
 import Loader from 'components/Loader/Loader';
+import WithAuthRedirect from 'hoc/WithAuthRedirect';
 
 const ContactsPage = () => {
   let contacts = useSelector(getContactsValue);
@@ -24,7 +25,7 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <div className="wrapper">
+    <section className="wrapper">
       <h1 className="heading">Phonebook</h1>
       <Form />
       {contacts.length > 0 ? (
@@ -38,8 +39,11 @@ const ContactsPage = () => {
       )}
       {isLoading && <Loader />}
       {error && <h2>{error}</h2>}
-    </div>
+    </section>
   );
 };
 
-export default ContactsPage;
+const ProtectedContactsPage = WithAuthRedirect(ContactsPage, '/login');
+
+// export default ContactsPage;
+export default ProtectedContactsPage;

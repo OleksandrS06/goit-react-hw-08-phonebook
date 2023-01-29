@@ -2,9 +2,9 @@ import RegisterForm from 'components/RegisterForm/RegisterForm';
 
 const RegisterPage = () => {
   return (
-    <section>
+    <section className="section">
       <div>
-        <h1>Register Page</h1>
+        <h1>Registration Page</h1>
         <RegisterForm />
       </div>
     </section>

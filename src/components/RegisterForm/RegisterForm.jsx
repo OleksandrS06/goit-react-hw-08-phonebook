@@ -25,8 +25,8 @@ const RegisterForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form onSubmit={handleSubmit} className="form">
+      <label className="label">
         <span>Name</span>
         <input
           value={name}
@@ -36,7 +36,7 @@ const RegisterForm = () => {
           required
         />
       </label>
-      <label>
+      <label className="label">
         <span>Email</span>
         <input
           value={email}
@@ -46,7 +46,7 @@ const RegisterForm = () => {
           required
         />
       </label>
-      <label>
+      <label className="label">
         <span>Password</span>
         <input
           value={password}
@@ -57,7 +57,9 @@ const RegisterForm = () => {
           required
         />
       </label>
-      <button type="submit">Register</button>
+      <button type="submit" className="submitBtn">
+        Register
+      </button>
     </form>
   );
 };

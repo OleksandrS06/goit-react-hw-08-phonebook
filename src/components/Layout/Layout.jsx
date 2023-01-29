@@ -1,7 +1,8 @@
-import UserMenu from 'components/UserMenu/UserMenu';
 import { useSelector } from 'react-redux';
 import { Link, Outlet } from 'react-router-dom';
 import { selectIsLoggedIn } from 'redux/auth/selectors';
+import UserMenu from 'components/UserMenu/UserMenu';
+import css from '../Layout/Layout.module.css';
 
 const routes = [
   {
@@ -32,13 +33,15 @@ const Layout = () => {
   return (
     <>
       <header>
-        <div>
+        <div className={css.wrapper}>
           <nav>
-            <ul>
+            <ul className={css.navList}>
               {routes.map(({ label, path, privatePath }) => {
                 return privatePath === isLoggedIn || path === '/' ? (
                   <li key={path}>
-                    <Link to={path}>{label}</Link>
+                    <Link to={path} className={css.links}>
+                      {label}
+                    </Link>
                   </li>
                 ) : null;
               })}

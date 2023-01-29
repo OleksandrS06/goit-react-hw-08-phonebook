@@ -1,0 +1,15 @@
+.section {
+  background-color: rgb(34, 22, 22);
+  height: 560px;
+  text-align: center;
+  color: rgb(144, 165, 165);
+}
+.heading {
+  padding-top: 80px;
+  color: rgb(144, 165, 165);
+}
+
+.text {
+  font-size: 18px;
+  color: rgb(144, 165, 165);
+}
