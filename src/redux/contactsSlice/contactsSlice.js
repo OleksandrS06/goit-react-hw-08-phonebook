@@ -3,7 +3,7 @@ import {
   deleteContactThunk,
   getContactsThunk,
   addContactThunk,
-} from 'redux/operations/contactThunk';
+} from 'redux/contactsSlice/contactThunk';
 
 const initialState = {
   contacts: [],

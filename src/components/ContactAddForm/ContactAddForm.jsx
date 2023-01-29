@@ -4,7 +4,7 @@ import { getContactsValue } from 'redux/contactsSlice/contactsSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 import css from './ContactAddForm.module.css';
-import { addContactThunk } from 'redux/operations/contactThunk';
+import { addContactThunk } from 'redux/contactsSlice/contactThunk';
 
 const Form = () => {
   let contacts = useSelector(getContactsValue);

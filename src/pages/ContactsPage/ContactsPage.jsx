@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContactsThunk } from 'redux/operations/contactThunk';
+import { getContactsThunk } from 'redux/contactsSlice/contactThunk';
 
 import {
   getContactsValue,

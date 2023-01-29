@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import css from './ContactsList.module.css';
 import { getContactsValue } from 'redux/contactsSlice/contactsSlice';
 import { getFilterValue } from 'redux/filterSlice/filterSlice';
-import { deleteContactThunk } from 'redux/operations/contactThunk';
+import { deleteContactThunk } from 'redux/contactsSlice/contactThunk';
 
 const ContactsList = () => {
   const dispatch = useDispatch();
