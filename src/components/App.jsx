@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import HomePage from 'pages/HomePage/HomePage';
-import RegisterPage from 'pages/RegisterPage/RegisterPage';
-import LoginPage from 'pages/LoginPage/LoginPage';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'redux/auth/operations';
 import PageNotFound from 'pages/404/404';
