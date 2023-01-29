@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <section className={css.section}>
       <div>
-        <h1 className={css.heading}>Welcome, stanger</h1>
+        <h1 className={css.heading}>Welcome, stranger</h1>
         <p className={css.text}>Login first to enjoy an app</p>
       </div>
     </section>
